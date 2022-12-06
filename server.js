@@ -13,6 +13,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 // sync sequelize models to the database, then turn on the server
+  // Regarding the force code: false || true
+    // To clear out the tables it should be true
+    // To start the server, and it holds data, make it false
   sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log('Now listening'));
   });
