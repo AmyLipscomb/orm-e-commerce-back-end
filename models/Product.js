@@ -38,7 +38,8 @@ Product.init(
   // * `price`
   price: {
      // * Decimal.
-      type: DataTypes.STRING,
+      type: DataTypes.DECIMAL(6,2),
+        // I want the highest price to be $9,999.99 so all together the number of digits is 6, and the number of digits after the decimal is 2. 
       
     // * Doesn't allow null values.
       allowNull: false,
