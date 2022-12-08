@@ -1,13 +1,10 @@
-# orm-e-commerce-back-end
+# Back End Coding with ORM 
 <img src="https://img.shields.io/badge/License-MIT-ff69b4.svg">
 
 ## Description
 
-<p align="justify">
-
 As a full-stack web developer, it's important to know the inner workings of back-end coding, particularly regarding internet retail. Internet retail, also known as [e-commerce](https://www.businessnewsdaily.com/15858-what-is-e-commerce.html), is "the process of selling goods and services over the internet." My first job was working retail and I worked as a sales associate for 3 years. Over the course of my employment, I saw personally how each year, more and more consumers were choosing to buy online rather than in-person shopping. Since the pandemic, shopping online has become even more prevalent. As a result, it's important to understand the fundamental framework of platforms that businesses use daily. Please read along to see how I've used object-relational mapping (ORM) to build the back end for an e-commerce site! &#129321;
 
-</p>
 
 
 ----
@@ -34,6 +31,10 @@ npm i
 
 ## Usage
 
+<!-- Within the ecommerce database, I created 5 models -->
+
+
+<!-- There were 5 folders that were necessary in order for the code to work. The first folder was "Config". This held the connections.js file, which  -->
 
 
 ---
