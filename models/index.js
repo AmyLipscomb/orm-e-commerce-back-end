@@ -17,21 +17,24 @@ const ProductTag = require('./ProductTag');
 
 
 // Products belongToMany Tags (through ProductTag)
-  Product.belongsToMany(Tag, {through: {
-    model: ProductTag,
-    unique: false
-  },
-    //define an alias for when data is retrieved 
-    as: 'product_tag'
-    });
-    
+  Product.belongsToMany(Tag, {through: ProductTag});
+
+
+  //Not sure about the code below:
+    // Product.belongsToMany(Tag, {through: {
+    //   model: ProductTag,
+    //   unique: false
+    // },
+    //   //define an alias for when data is retrieved 
+    //   as: 'product_tag'
+    //   });
+      
+    // foreignKey: 'product_tag_id',
+      // onDelete: 'CASCADE',
+
+
+      
   
-  
-  // Product.belongsToMany(Tag, {through: ProductTag});
-  
-  // foreignKey: 'product_tag_id',
-    // onDelete: 'CASCADE',
- 
 // Tags belongToMany Products (through ProductTag)
   Tag.belongsToMany(Product, {through: ProductTag});
 
