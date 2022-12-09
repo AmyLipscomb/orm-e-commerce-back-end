@@ -22,30 +22,18 @@ const ProductTag = require('./ProductTag');
   // https://www.bezkoder.com/sequelize-associate-many-to-many/
 
   Product.belongsToMany(Tag, {
-    through: "product_tag",
-    as: "tags",
+    through: ProductTag,
+    // as: "tags",
     foreignKey: "product_id",
   });
 
   Tag.belongsToMany(Product, {
-    through: "product_tag",
-    as: "products",
+    through: ProductTag,
+    // as: "products",
     foreignKey: "tag_id"
   })
       
-  
-// Tags belongToMany Products (through ProductTag)
-  Tag.belongsToMany(Product, {through: ProductTag});
 
-   // https://www.bezkoder.com/sequelize-associate-many-to-many/
-
-  // Tag.belongsToMany(Product, {
-  //   through: "tag_tag", //not sure about this line
-  //   as: "products",
-  //   foreignKey: "tag_id",
-  // });
-
-  // Product.belongsToMany()
 
 module.exports = {
   Product,

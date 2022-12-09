@@ -36,7 +36,7 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// HAVEN'T DONE ANYTHING TO THIS CODE YET. BELIEVE I SHOULD ADD AN 'ASYNC' AND 'AWAIT'. NOT SURE WHERE TO PUT THE 'AWAIT'. 
+
 // create new product
 router.post('/', (req, res) => {
   /* req.body should look like this...
