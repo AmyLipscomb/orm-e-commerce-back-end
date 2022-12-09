@@ -56,10 +56,11 @@ Product.init(
 
      // * Doesn't allow null values.
       allowNull: false,
+      defaultValue: 10, //setting the default length as 10
 
     // * Set a default value of `10` & Validates that the value is numeric.
       validate: {
-        len: [10], // setting the default length as 10
+        // len: [10], 
         isNumeric: true, // validates that the number is numeric
       }
   },
