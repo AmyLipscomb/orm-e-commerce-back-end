@@ -31,11 +31,37 @@ npm i
 
 ## Usage
 
-<!-- Within the ecommerce database, I created 5 models -->
+1. I first had to create the database. To do this, I used the following lines of code in the schema file and then copied and pasted them into WorkBench. 
 
+![schema](./assets/css/images/schemascreenshot.png)
 
-<!-- There were 5 folders that were necessary in order for the code to work. The first folder was "Config". This held the connections.js file, which  -->
+2. Then I went back into the VS code and in the terminal, typed the command: 
 
+```
+npm run seed
+```
+![seed](./assets/css/images/seedscreenshot.png)
+
+3. Once the seed was run, it was time to start the server. So, I typed the command:
+
+```
+npm start
+```
+![startserver](./assets/css/images/startserverscreenshot.png)
+
+4. Once the server was started, I opened Insomnia (the application, not &#127850; &#128521;), and within the application, I did the following:
+    * Created 3 folders, one for each route. 
+    * Created 5 folders for each HTTP request, (GET, POST, PUT, DELETE).
+    * Typed the URL, "http://localhost:3001/api/", and added the endpoint I was trying to run. 
+      - In the screenshot below, the endpoint I was running was for /api/categories: 
+
+![insomnia](./assets/css/images/insomnia.png)
+
+*It's important to note, that if the code has to be fixed, then in order for the requests to be updated within Insomnia, the server has to be stopped and then re-run. To stop the server, the following command has to be used: 
+
+```
+control ^ + C
+```
 
 ---
 
